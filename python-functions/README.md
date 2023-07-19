@@ -1,1 +1,1 @@
-For functions
+For python functions
