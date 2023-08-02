@@ -4,7 +4,7 @@ Rectangle = __import__('6-rectangle').Rectangle
 r = Rectangle(3, 5)
 
 print(r)
-print(dir(r))
+print(r.area())
 
 try:
     print("Rectangle: {} - {}".format(r.width, r.height))
