@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-# defines a square
+""" defines a square """
 
 
 class Square:
-    #square with private instance attribute size
+    """ square with private instance attribute size """
     def __init__(self, size=0):
         if type(size) is int:
             if size < 0:
@@ -14,4 +14,4 @@ class Square:
             raise TypeError("size must be an integer")
 
     def area(self):
-        return self.__size ** 3
+        return self.__size ** 2
