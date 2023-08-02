@@ -6,11 +6,6 @@ Creates a Rectangle class.
 
 BaseGeometry = __import__('5-base_geometry').BaseGeometry
 
-class NoInitSubclassMeta(type):
-    def __dir__(cls):
-        return [attr for attr in super().__dir__() if
-                attr != '__init_subclass__']
-
 
 class Rectangle(BaseGeometry):
     """class Rectangle that inherits from BaseGeometry (7-base_geometry.py).
