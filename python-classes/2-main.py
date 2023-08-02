@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 # Return for evaluation
-Square = __import__('2-square').Square
+Square = __import__('1-square').Square
 
 my_square_1 = Square(3)
 print("Area: {}".format(my_square_1.area()))
