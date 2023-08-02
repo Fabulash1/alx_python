@@ -7,7 +7,8 @@ class NoInitSubclassMeta(type):
     def __dir__(cls):
         return [attr for attr in super().__dir__() if
                 attr != '__init_subclass__']
-    
+
+
 class Square(Rectangle):
     """Represent a square."""
 
@@ -20,4 +21,3 @@ class Square(Rectangle):
         self.integer_validator("size", size)
         super().__init__(size, size)
         self.__size = size
-        
