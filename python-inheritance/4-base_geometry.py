@@ -1,13 +1,15 @@
 #!/usr/bin/python3
-"""Creates a base geometry class called BaseGeometry"""
+"""Create BaseGeometry"""
+
 
 class NoInitSubclassMeta(type):
     def __dir__(cls):
         return [attr for attr in super().__dir__() if
                 attr != '__init_subclass__']
 
+
 class BaseGeometry(metaclass=NoInitSubclassMeta):
-    """ Represents BaseGeometry class
+    """BaseGeometry class
     """
     def __dir__(cls):
         """Removing __init_subclass_ attribute
@@ -17,8 +19,7 @@ class BaseGeometry(metaclass=NoInitSubclassMeta):
                 attr != '__init_subclass__']
 
     def area(self):
-        """
-        Not implemeted.
+        """Define Area function.
 
         Raises:
             Exception: if area is not implemented.
