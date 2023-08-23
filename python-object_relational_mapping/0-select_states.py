@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 # Write a script that lists all states from the database hbtn_0e_0_usa:
-"""lists all states 
-from the database hbtn_0e_0_usa"""
+"""lists all states from the database hbtn_0e_0_usa"""
 
 if __name__ == '__main__':
 
