@@ -1,5 +1,4 @@
-#!/usr/bin/python3
-'''7-model_state_fetch_all.py'''
+#!/usr/bin/
 
 """import a model and fitch its results"""
 
